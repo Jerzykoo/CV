@@ -1,0 +1,756 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-wrapper .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-wrapper .wrapper .left {
+  width: 28%;
+  background-color: #04500f;
+  color: white;
+}
+
+.main-wrapper .wrapper .left .leftWrapper {
+  padding: 15px 4% 0 4%;
+}
+
+.main-wrapper .wrapper .right {
+  width: 72%;
+  padding: 15px 30px 5px 30px;
+}
+
+div.imgWrap div.img {
+  background-image: url("../img/6.PNG");
+  background-position: center;
+  height: 380px;
+}
+
+div.contact {
+  margin-bottom: 15px;
+}
+
+div.contact .contact-wrapper {
+  border-bottom: 2px solid white;
+}
+
+div.contact .contact-wrapper h2 {
+  text-transform: uppercase;
+}
+
+div.contact .contact-wrapper h5 {
+  margin-bottom: 15px;
+}
+
+div.contact .contact-wrapper .smallWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.contact .contact-wrapper .smallWrapper div.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+div.contact .contact-wrapper .smallWrapper div.icon i {
+  display: block;
+}
+
+div.contact .contact-wrapper .smallWrapper p {
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+div.certificates div.certificates-wrapper h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+div.certificates .first {
+  border-bottom: 2px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+
+div.certificates .second p {
+  margin-bottom: 15px;
+}
+
+div.certificates .second .rangeWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 10px;
+}
+
+div.certificates .second .rangeWrap.polish {
+  margin-bottom: 20px;
+}
+
+div.certificates .second .rangeWrap.polish .left {
+  background-color: #089408;
+  width: 98%;
+}
+
+div.certificates .second .rangeWrap.polish .right {
+  background-color: #023a0a;
+  width: 2%;
+  padding: 0;
+}
+
+div.certificates .second .rangeWrap.english .left {
+  background-color: #089408;
+  width: 75%;
+}
+
+div.certificates .second .rangeWrap.english .right {
+  background-color: #023a0a;
+  width: 25%;
+  padding: 0;
+}
+
+div.social div.social-main-wrapper {
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+}
+
+div.social div.social-main-wrapper h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+div.social div.social-main-wrapper div.social-wrapper {
+  padding-bottom: 15px;
+}
+
+div.social div.social-main-wrapper div.social-wrapper div.mediaWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+
+div.social div.social-main-wrapper div.social-wrapper div.mediaWrap div.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+div.social div.social-main-wrapper div.social-wrapper div.mediaWrap div.icon i {
+  display: block;
+}
+
+div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links p.name {
+  font-size: 23px;
+  margin-bottom: 2px;
+}
+
+div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links p.second {
+  font-size: 15px;
+}
+
+div.about .about-wrapper {
+  border-bottom: 2px solid #61cc5e;
+  margin-bottom: 15px;
+}
+
+div.about .about-wrapper h1.title {
+  text-transform: uppercase;
+  color: #09801a;
+  margin-bottom: 15px;
+}
+
+div.about .about-wrapper p.description {
+  margin-bottom: 15px;
+}
+
+div.projects h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #09801a;
+}
+
+div.projects .projects-wrapper {
+  margin-bottom: 15px;
+}
+
+div.experience .experience-main-wrapper {
+  margin-bottom: 15px;
+}
+
+div.experience .experience-main-wrapper h1 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #09801a;
+}
+
+div.experience .experience-main-wrapper div.experience-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.experience .experience-main-wrapper div.experience-wrapper h2 {
+  text-transform: uppercase;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+div.experience .experience-main-wrapper div.experience-wrapper section {
+  border-left: 3px solid #09801a;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+div.experience .experience-main-wrapper div.experience-wrapper section .title {
+  margin-bottom: 15px;
+}
+
+div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+  margin-left: 30%;
+}
+
+div.projects-wrapper {
+  border-bottom: 2px solid #61cc5e;
+  padding-bottom: 15px;
+}
+
+div.education .education-main-wrapper {
+  border-bottom: 2px solid #61cc5e;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+div.education .education-main-wrapper h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #09801a;
+}
+
+div.education .education-main-wrapper .education-wrapper {
+  border-left: 3px solid #09801a;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+div.education .education-main-wrapper .education-wrapper section .title, div.education .education-main-wrapper .education-wrapper section .description {
+  margin-bottom: 15px;
+}
+
+div.hobby {
+  margin-right: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+div.hobby h1 {
+  color: #09801a;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+div.hobby .hobby-second-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+div.hobby .hobby-second-wrapper .hobby-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 3px solid #09801a;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0px;
+}
+
+div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  display: block;
+  font-size: 35px;
+}
+
+div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-bottom: 3px solid #09801a;
+}
+
+@media (max-width: 460px) {
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-wrapper .wrapper {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .main-wrapper .wrapper .left {
+    width: 28%;
+    background-color: #04500f;
+    color: white;
+    width: 100%;
+  }
+  .main-wrapper .wrapper .left .leftWrapper {
+    padding: 15px 4% 15px 4%;
+  }
+  .main-wrapper .wrapper .right {
+    width: 100%;
+    padding: 15px 30px 5px 30px;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+    margin-left: 0;
+  }
+  div.hobby {
+    padding-bottom: 20px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper {
+    width: 100%;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 60px;
+    height: 60px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 20px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 20px;
+    height: 30px;
+  }
+  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+    text-align: center;
+  }
+  .panelTitle {
+    text-align: center;
+  }
+}
+
+@media (min-width: 460px) {
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-wrapper .wrapper {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .main-wrapper .wrapper .left {
+    width: 28%;
+    background-color: #04500f;
+    color: white;
+    width: 100%;
+  }
+  .main-wrapper .wrapper .left .leftWrapper {
+    padding: 15px 4% 15px 4%;
+  }
+  .main-wrapper .wrapper .right {
+    width: 100%;
+    padding: 15px 30px 5px 30px;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+    margin-left: 0;
+  }
+  div.hobby {
+    padding-bottom: 20px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 60px;
+    height: 60px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 25px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 40px;
+    height: 30px;
+  }
+  div.contact .contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid white;
+  }
+  div.social div.social-main-wrapper div.social-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 15px;
+  }
+  div.right {
+    font-size: 1.1rem;
+  }
+  div.imgWrap {
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid white;
+  }
+  div.imgMainWrap {
+    padding: 15px 4% 0 4%;
+    background-color: #04500f;
+  }
+  div.img {
+    border-radius: 50%;
+    width: 350px;
+    height: 370px;
+  }
+  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+    text-align: center;
+  }
+  div.social h2, div.contact h2, div.certificates h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 540px) {
+  div.img {
+    border-radius: 50%;
+    width: 400px;
+    height: 420px;
+  }
+  div.hobby {
+    padding-bottom: 20px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 70px;
+    height: 70px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 25px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    height: 35px;
+  }
+}
+
+@media (min-width: 650px) {
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 80px;
+    height: 80px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 30px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 80px;
+    height: 80px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 30px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 850px) {
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 90px;
+    height: 90px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 30px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 100px;
+    height: 100px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 35px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 90px;
+    height: 50px;
+  }
+  div.right p {
+    font-size: 1.1rem;
+  }
+  div.contact .contact-wrapper {
+    display: block;
+    border-bottom: 2px solid white;
+  }
+  div.social div.social-main-wrapper div.social-wrapper {
+    display: block;
+  }
+  div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links {
+    text-align: left;
+  }
+  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+    text-align: left;
+  }
+  div.social h2, div.contact h2, div.certificates h2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-wrapper .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .main-wrapper .wrapper .left {
+    width: 28%;
+    background-color: #04500f;
+    color: white;
+  }
+  .main-wrapper .wrapper .left p {
+    font-size: 16px;
+  }
+  .main-wrapper .wrapper .left h2 {
+    font-size: 1.4rem;
+  }
+  .main-wrapper .wrapper .left .leftWrapper {
+    padding: 15px 4% 15px 4%;
+  }
+  .main-wrapper .wrapper .right {
+    width: 72%;
+    padding: 15px 30px 5px 30px;
+  }
+  .main-wrapper .wrapper .right h1 {
+    font-size: 1.8rem;
+  }
+  .main-wrapper .wrapper .right p {
+    font-size: 19px;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+    margin-left: 0;
+  }
+  div.hobby {
+    padding-bottom: 20px;
+  }
+  div.hobby h1 {
+    margin-bottom: 40px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 110px;
+    height: 110px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 30px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 70px;
+    height: 55px;
+  }
+  div.imgWrap {
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid white;
+  }
+  div.imgMainWrap {
+    padding: 15px 4% 0 4%;
+    background-color: #04500f;
+  }
+  div.img {
+    border-radius: 50%;
+    width: 350px;
+    height: 370px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-wrapper .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .main-wrapper .wrapper .left {
+    width: 28%;
+    background-color: #04500f;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .main-wrapper .wrapper .left .leftWrapper {
+    padding: 15px 4% 15px 4%;
+  }
+  .main-wrapper .wrapper .right {
+    width: 72%;
+    padding: 15px 30px 5px 30px;
+  }
+  .main-wrapper .wrapper .right p {
+    font-size: 1.2rem;
+  }
+  div.left div.img {
+    height: 410px;
+    background-position: top;
+  }
+  div.hobby {
+    padding-bottom: 20px;
+  }
+  div.hobby h1 {
+    margin-bottom: 40px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+    width: 120px;
+    height: 120px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+    display: block;
+    font-size: 40px;
+  }
+  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+    width: 90px;
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
