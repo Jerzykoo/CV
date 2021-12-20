@@ -38,30 +38,30 @@ div.imgWrap div.img {
   height: 380px;
 }
 
-div.contact {
+.contact {
   margin-bottom: 15px;
 }
 
-div.contact .contact-wrapper {
+.contact .contact-wrapper {
   border-bottom: 2px solid white;
 }
 
-div.contact .contact-wrapper h2 {
+.contact__title {
   text-transform: uppercase;
 }
 
-div.contact .contact-wrapper h5 {
+.contact__subtitle {
   margin-bottom: 15px;
 }
 
-div.contact .contact-wrapper .smallWrapper {
+.contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.contact .contact-wrapper .smallWrapper div.icon {
-  width: 40px;
+.contact__item-icon {
+  min-width: 40px;
   height: 40px;
   margin-right: 10px;
   background-color: white;
@@ -78,80 +78,37 @@ div.contact .contact-wrapper .smallWrapper div.icon {
   color: black;
 }
 
-div.contact .contact-wrapper .smallWrapper div.icon i {
-  display: block;
-}
-
-div.contact .contact-wrapper .smallWrapper p {
+.contact__item-text {
   line-height: 40px;
   margin-bottom: 15px;
 }
 
-div.certificates div.certificates-wrapper h2 {
+.certificates__title {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-div.certificates .first {
+.certificates__wrapper {
   border-bottom: 2px solid white;
   margin-bottom: 15px;
   padding-bottom: 20px;
 }
 
-div.certificates .second p {
-  margin-bottom: 15px;
-}
-
-div.certificates .second .rangeWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  height: 10px;
-}
-
-div.certificates .second .rangeWrap.polish {
-  margin-bottom: 20px;
-}
-
-div.certificates .second .rangeWrap.polish .left {
-  background-color: #089408;
-  width: 98%;
-}
-
-div.certificates .second .rangeWrap.polish .right {
-  background-color: #023a0a;
-  width: 2%;
-  padding: 0;
-}
-
-div.certificates .second .rangeWrap.english .left {
-  background-color: #089408;
-  width: 75%;
-}
-
-div.certificates .second .rangeWrap.english .right {
-  background-color: #023a0a;
-  width: 25%;
-  padding: 0;
-}
-
-div.social div.social-main-wrapper {
+.social__main-wrapper {
   margin-bottom: 15px;
   border-bottom: 2px solid white;
 }
 
-div.social div.social-main-wrapper h2 {
+.social__wrapper {
+  padding-bottom: 15px;
+}
+
+.social__title {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-div.social div.social-main-wrapper div.social-wrapper {
-  padding-bottom: 15px;
-}
-
-div.social div.social-main-wrapper div.social-wrapper div.mediaWrap {
+.social__mediaWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,8 +118,8 @@ div.social div.social-main-wrapper div.social-wrapper div.mediaWrap {
   padding-bottom: 10px;
 }
 
-div.social div.social-main-wrapper div.social-wrapper div.mediaWrap div.icon {
-  width: 40px;
+.social__icon {
+  min-width: 40px;
   height: 40px;
   margin-right: 10px;
   background-color: white;
@@ -179,120 +136,150 @@ div.social div.social-main-wrapper div.social-wrapper div.mediaWrap div.icon {
   color: black;
 }
 
-div.social div.social-main-wrapper div.social-wrapper div.mediaWrap div.icon i {
-  display: block;
-}
-
-div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links p.name {
+.social__links-name {
   font-size: 23px;
   margin-bottom: 2px;
 }
 
-div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links p.second {
+.social__links-link {
+  text-decoration: none;
+  color: white;
   font-size: 15px;
 }
 
-div.about .about-wrapper {
+.languages__title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.languages__language {
+  margin-bottom: 15px;
+}
+
+.languages__rangeWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #023a0a;
+  height: 10px;
+}
+
+.languages__rangeWrap-polish {
+  margin-bottom: 20px;
+}
+
+.languages__rangeWrap-polish-left {
+  background-color: #089408;
+  width: 98%;
+}
+
+.languages__rangeWrap-english-left {
+  background-color: #089408;
+  width: 75%;
+}
+
+.about__wrapper {
   border-bottom: 2px solid #61cc5e;
   margin-bottom: 15px;
 }
 
-div.about .about-wrapper h1.title {
+.about__title {
   text-transform: uppercase;
   color: #09801a;
   margin-bottom: 15px;
 }
 
-div.about .about-wrapper p.description {
+.about__description {
   margin-bottom: 15px;
 }
 
-div.projects h1 {
+.projects__title {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #09801a;
 }
 
-div.projects .projects-wrapper {
+.projects__description {
   margin-bottom: 15px;
 }
 
-div.experience .experience-main-wrapper {
+.projects__wrapper {
+  border-bottom: 2px solid #61cc5e;
   margin-bottom: 15px;
 }
 
-div.experience .experience-main-wrapper h1 {
+.skills__main-wrapper {
+  margin-bottom: 15px;
+}
+
+.skills__title {
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #09801a;
 }
 
-div.experience .experience-main-wrapper div.experience-wrapper {
+.skills__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.experience .experience-main-wrapper div.experience-wrapper h2 {
+.skills__subtitle {
   text-transform: uppercase;
   padding-left: 30px;
   margin-bottom: 15px;
 }
 
-div.experience .experience-main-wrapper div.experience-wrapper section {
+.skills__list {
   border-left: 3px solid #09801a;
   padding-left: 10px;
   margin-left: 20px;
 }
 
-div.experience .experience-main-wrapper div.experience-wrapper section .title {
+.skills__list-title {
   margin-bottom: 15px;
 }
 
-div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+.skills__right {
   margin-left: 30%;
 }
 
-div.projects-wrapper {
-  border-bottom: 2px solid #61cc5e;
-  padding-bottom: 15px;
-}
-
-div.education .education-main-wrapper {
+.education__main-wrapper {
   border-bottom: 2px solid #61cc5e;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-div.education .education-main-wrapper h1 {
+.education__wrapper {
+  border-left: 3px solid #09801a;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+.education__title {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #09801a;
 }
 
-div.education .education-main-wrapper .education-wrapper {
-  border-left: 3px solid #09801a;
-  padding-left: 10px;
-  margin-left: 20px;
-}
-
-div.education .education-main-wrapper .education-wrapper section .title, div.education .education-main-wrapper .education-wrapper section .description {
+.education__subtitle, .education__description {
   margin-bottom: 15px;
 }
 
-div.hobby {
+.hobby {
   margin-right: 0;
   padding-right: 0;
   width: 100%;
 }
 
-div.hobby h1 {
+.hobby__title {
   color: #09801a;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-div.hobby .hobby-second-wrapper {
+.hobby__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +289,7 @@ div.hobby .hobby-second-wrapper {
   width: 100%;
 }
 
-div.hobby .hobby-second-wrapper .hobby-wrapper {
+.hobby__icons-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +299,14 @@ div.hobby .hobby-second-wrapper .hobby-wrapper {
           justify-content: center;
 }
 
-div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+.hobby__rect {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-bottom: 3px solid #09801a;
+}
+
+.hobby__icon {
   width: 100px;
   height: 100px;
   background-color: white;
@@ -330,16 +324,9 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
   margin-right: 0px;
 }
 
-div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+.hobby__icon i {
   display: block;
   font-size: 35px;
-}
-
-div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
-  width: 100px;
-  height: 50px;
-  background-color: white;
-  border-bottom: 3px solid #09801a;
 }
 
 @media (max-width: 460px) {
@@ -364,34 +351,37 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
     width: 100%;
     padding: 15px 30px 5px 30px;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper {
+  .skills__left {
+    margin-bottom: 1rem;
+  }
+  .skills__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+  .skills__right {
     margin-left: 0;
   }
-  div.hobby {
+  .hobby {
     padding-bottom: 20px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper {
+  .hobby__icons-wrapper {
     width: 100%;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 60px;
     height: 60px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 20px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 20px;
     height: 30px;
   }
-  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+  div.about h1, div.projects h1, div.skills h1, div.hobby h1, div.education h1 {
     text-align: center;
   }
   .panelTitle {
@@ -421,7 +411,7 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
     width: 100%;
     padding: 15px 30px 5px 30px;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper {
+  .skills__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -433,25 +423,25 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
         -ms-flex-align: center;
             align-items: center;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+  .skills__right {
     margin-left: 0;
   }
-  div.hobby {
+  .hobby {
     padding-bottom: 20px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 60px;
     height: 60px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 25px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 40px;
     height: 30px;
   }
-  div.contact .contact-wrapper {
+  .contact .contact-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -467,7 +457,7 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
             align-items: center;
     border-bottom: 2px solid white;
   }
-  div.social div.social-main-wrapper div.social-wrapper {
+  .social__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -478,6 +468,9 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 15px;
+  }
+  .certificates__exam {
+    text-align: center;
   }
   div.right {
     font-size: 1.1rem;
@@ -504,10 +497,10 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
     width: 350px;
     height: 370px;
   }
-  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+  div.about h1, div.projects h1, div.skills h1, div.hobby h1, div.education h1 {
     text-align: center;
   }
-  div.social h2, div.contact h2, div.certificates h2 {
+  div.social h2, div.contact h2, div.certificates h2, div.languages h2 {
     text-align: center;
   }
 }
@@ -518,95 +511,109 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
     width: 400px;
     height: 420px;
   }
-  div.hobby {
+  .hobby {
     padding-bottom: 20px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 70px;
     height: 70px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 25px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     height: 35px;
   }
 }
 
 @media (min-width: 650px) {
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 80px;
     height: 80px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 30px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     height: 40px;
   }
 }
 
 @media (min-width: 768px) {
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 80px;
     height: 80px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 30px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 70px;
     height: 40px;
   }
 }
 
 @media (min-width: 850px) {
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 90px;
     height: 90px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 30px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     height: 45px;
   }
 }
 
 @media (min-width: 1024px) {
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 100px;
     height: 100px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 35px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 90px;
     height: 50px;
   }
-  div.right p {
-    font-size: 1.1rem;
+  div.left .text {
+    font-size: 1.5rem;
   }
-  div.contact .contact-wrapper {
+  div.right .description {
+    font-size: 1.5rem;
+  }
+  .contact .contact-wrapper {
     display: block;
     border-bottom: 2px solid white;
   }
-  div.social div.social-main-wrapper div.social-wrapper {
+  .contact__title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+  }
+  .contact__subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .social__wrapper {
     display: block;
   }
-  div.social div.social-main-wrapper div.social-wrapper div.mediaWrap .links {
+  .social__links {
     text-align: left;
   }
-  div.about h1, div.projects h1, div.experience h1, div.hobby h1, div.education h1 {
+  .certificates__exam {
     text-align: left;
   }
-  div.social h2, div.contact h2, div.certificates h2 {
+  div.about h1, div.projects h1, div.skills h1, div.hobby h1, div.education h1 {
+    text-align: left;
+  }
+  div.social h2, div.contact h2, div.certificates h2, div.languages h2 {
     text-align: left;
   }
 }
@@ -646,7 +653,15 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
   .main-wrapper .wrapper .right p {
     font-size: 19px;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper {
+  .contact__title {
+    font-size: 24px;
+    margin-bottom: .2rem;
+  }
+  .contact__subtitle {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .skills__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -658,24 +673,24 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
         -ms-flex-align: center;
             align-items: center;
   }
-  div.experience .experience-main-wrapper div.experience-wrapper div.experience-right {
+  .skills__right {
     margin-left: 0;
   }
-  div.hobby {
+  .hobby {
     padding-bottom: 20px;
   }
-  div.hobby h1 {
+  .hobby__title {
     margin-bottom: 40px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 110px;
     height: 110px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 30px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 70px;
     height: 55px;
   }
@@ -734,21 +749,21 @@ div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
     height: 410px;
     background-position: top;
   }
-  div.hobby {
+  .hobby {
     padding-bottom: 20px;
   }
-  div.hobby h1 {
+  .hobby__title {
     margin-bottom: 40px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon {
+  .hobby__icon {
     width: 120px;
     height: 120px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.icon i {
+  .hobby__icon i {
     display: block;
     font-size: 40px;
   }
-  div.hobby .hobby-second-wrapper .hobby-wrapper div.rect {
+  .hobby__rect {
     width: 90px;
     height: 60px;
   }

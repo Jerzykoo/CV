@@ -57,26 +57,26 @@ div.imgWrap{
 
 //contact
 
-div.contact{
+.contact{
     margin-bottom: $main-margin;
     // padding-bottom: $main-padding;
   
     .contact-wrapper{
         border-bottom: 2px solid white;
-
+    }
     
-        h2 {
+        &__title{
             text-transform: uppercase;
         }
-        h5 {
+        &__subtitle{
             margin-bottom: $main-margin;
         }
 
-        .smallWrapper{
+        &__item{
             display: flex;
 
-            div.icon{
-                width: 40px;
+            &-icon{
+                min-width: 40px;
                 height: 40px;
                 margin-right: 10px;
                 background-color: white;
@@ -85,298 +85,286 @@ div.contact{
                 justify-content: center;
                 align-items: center;
                 color: black;
-                i{
-                    display: block;
-                } 
             }
 
-           p{
+           &-text{
                 line-height: 40px;
                 margin-bottom: $main-margin;
             }
         }
-    }
+    
    
 }
 
 
 //certificates
 
-div.certificates{
-    div.certificates-wrapper h2{
+.certificates{
+    &__title{
         margin-bottom: $big-margin;
         text-transform: uppercase;
     }
     
-    .first{
+    &__wrapper{
         border-bottom: 2px solid white;
         margin-bottom: $main-margin;
         padding-bottom: $big-padding;;
     }
-
-    .second{
-        p{
-            margin-bottom: $main-margin;
-        }
-        .rangeWrap{
-            display: flex;
-            width: 100%;
-            margin-bottom: $big-margin;
-            height: 10px;
-        }
-            
-            .rangeWrap.polish{
-                margin-bottom: $big-margin;
-           
-                .left{
-                    background-color: rgb(8, 148, 8);
-                    width: 98%;
-                }
-                .right{
-                    background-color: rgb(2, 58, 10);
-                    width: 2%;
-                    padding: 0;
-                }
-            }
-    
-            .rangeWrap.english{
-          
-                .left{
-                    background-color: rgb(8, 148, 8);
-                    width: 75%;
-                }
-                .right{
-                    background-color: rgb(2, 58, 10);
-                    width: 25%;
-                    padding: 0;
-                }
-            }   
-
-        }
-    
-    }        
+ 
+}        
    
 
 
 
 //social
 
-div.social{
-    div.social-main-wrapper {
-        margin-bottom: $main-margin;
-        border-bottom: 2px solid white;
+.social{
 
-        h2{
+        &__main-wrapper {
+            margin-bottom: $main-margin;
+            border-bottom: 2px solid white;
+        }
+
+            
+        &__wrapper {
+            padding-bottom: $main-margin;
+        }
+
+        &__title{
             margin-bottom: $main-margin;
             text-transform: uppercase;
         }
-        
-        div.social-wrapper {
-            padding-bottom: $main-margin;
     
     
-            div.mediaWrap{
+            &__mediaWrap{
                 display: flex;
                 align-items: center;
                 padding-bottom: $main-padding;
-    
-                div.icon{
-                    width: 40px;
-                    height: 40px;
-                    margin-right: 10px;
-                    background-color: white;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: black;
-                    i{
-                        display: block;
-                    } 
+            }
+
+            &__icon{
+                min-width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                background-color: white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black; 
+            }
+   
+            &__links{
+                &-name{
+                    font-size: 23px;
+                    margin-bottom: 2px;
                 }
-                
-                .links{
-                    p.name{
-                        font-size: 23px;
-                        margin-bottom: 2px;
-                    }
-    
-                    p.second{
-                        font-size: 15px;
-                    }
+
+                &-link{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
                 }
             }
-        }
-    }
    
-    
 }
 
 
+//languages
+
+.languages{
+        &__title{
+            margin-bottom: $main-margin;
+            text-transform: uppercase;
+        }
+        &__language{
+            margin-bottom: $main-margin;
+        }
+
+        
+        &__rangeWrap{
+            display: flex;
+            margin-bottom: $big-margin;
+            background-color: rgb(2, 58, 10);
+            height: 10px;
+            
+            &-polish{
+                margin-bottom: $big-margin;
+        
+                &-left{
+                    background-color: rgb(8, 148, 8);
+                    width: 98%;
+                }
+            }
+
+            &-english{
+                &-left{
+                    background-color: rgb(8, 148, 8);
+                    width: 75%;
+                } 
+            }  
+      }
+
+      
+
+    }
 
 
 
 //right:
 
 //about
-div.about{
-    // padding: 10px 30px 0 30px;
-    
-    .about-wrapper{
+.about{
+    &__wrapper{
         border-bottom: $main-right-border-bottom;
         margin-bottom: $main-margin;
-        h1.title{
-            text-transform: uppercase;
-            
-            color: $main-right-h1-color;
-            margin-bottom:$main-margin;
-        }
-    
-        p.description{
-            margin-bottom: $main-margin;
-        }
+    }
 
+    &__title{
+        text-transform: uppercase;   
+        color: $main-right-h1-color;
+        margin-bottom:$main-margin;
+    }
+    
+    &__description{
+        margin-bottom: $main-margin;
     }
     
 }
 
 
 //projects
-div.projects{
+.projects{
     // padding: 15px 30px 5px 30px;
 
-    h1{
+    &__title{
         text-transform: uppercase;
         margin-bottom: $big-margin;
         color: $main-right-h1-color;
     }
-    .projects-wrapper{
+    &__description{
+        margin-bottom: $main-margin;
+    }
+    &__wrapper{
+        border-bottom: $main-right-border-bottom;
         margin-bottom: $main-margin;
     }
 }
 
 
-//experience
-div.experience{
+//skills
+.skills{
     // padding: 15px 30px 5px 30px;
 
-    .experience-main-wrapper{
-        margin-bottom: $main-margin;
-        h1{
+        &__main-wrapper{
+            margin-bottom: $main-margin;
+        }
+
+        &__title{
             text-transform: uppercase;
             margin-bottom: 15px;
             color: rgb(9, 128, 26);
         }
     
-        div.experience-wrapper{
+        &__wrapper{
             display: flex;
-            
-            h2{
+        }
+
+           &__subtitle{
                 text-transform: uppercase;
                 padding-left: 30px;
                 margin-bottom: $main-margin;
             }
-    
-            section{
+
+            &__list{
                 border-left: $main-right-borderLeft;
                 padding-left: $main-padding;
                 margin-left: $big-margin;
-                            
-                .title{
+                &-title{
                     margin-bottom: 15px;
                 }
             }
+
     
-            div.experience-right{
+            &__right{
                 margin-left: 30%;  
             }
     
-           
-        }
-    }
-    
 }
 
 
-
-div.projects-wrapper{
-    border-bottom: $main-right-border-bottom;
-    padding-bottom: 15px;
-}
-
-div.education{
-    .education-main-wrapper{
+.education{
+    &__main-wrapper{
         border-bottom: $main-right-border-bottom;
         padding-bottom: 15px;
         margin-bottom: $main-margin;
-        h1{
+    }
+
+    &__wrapper{
+        border-left: $main-right-borderLeft;
+        padding-left: $main-padding;
+        margin-left: $big-margin;      
+    }
+        &__title{
             text-transform: uppercase;
             margin-bottom: $big-margin;
             color: rgb(9, 128, 26);  
         }
 
-        .education-wrapper{
-            border-left: $main-right-borderLeft;
-            padding-left: $main-padding;
-            margin-left: $big-margin;
-
-            section{
-             
-                .title, .description{
-                    margin-bottom: $main-margin;
-                }
+            &__subtitle, &__description{
+                margin-bottom: $main-margin;
             }
-        }
-    }
 
 }
 
 
 //hobby
 
-div.hobby{
+.hobby{
     margin-right: 0;
     padding-right: 0;
     width: 100%;
-    h1{
+    &__title{
         color: $main-right-h1-color;
         text-transform: uppercase;
         margin-bottom: 25px;
     }
-    .hobby-second-wrapper{
+    &__icons{
         display: flex;
         justify-content: center;
         width: 100%;
 
-        .hobby-wrapper{
+        &-wrapper{
             display: flex;
             width: 90%;
             justify-content: center;
-            div.icon{
-                width: 100px;
-                height: 100px;
-                background-color: white;
-                border: 3px solid $main-right-h1-color;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 0px;
-        
-                i{
-                    display: block;
-                    font-size: 35px;
-                }
-            } 
-        
-            div.rect{
-                width: 100px;
-                height: 50px;
-                background-color: white;
-                border-bottom: 3px solid $main-right-h1-color;
-            }
-        
-            } 
+         } 
+    }
+
+    
+    &__rect{
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border-bottom: 3px solid $main-right-h1-color;
+    }
+
+
+    &__icon{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border: 3px solid $main-right-h1-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+
+        i{
+            display: block;
+            font-size: 35px;
+        }
     }
       
    
@@ -413,50 +401,46 @@ div.hobby{
         }
     }
   
-    div.experience{
-  
-        .experience-main-wrapper{
-        
-            div.experience-wrapper{
-                flex-direction: column;
-
-                div.experience-right{
-                    margin-left: 0;  
-                }
-
-            }
+    .skills{
+        &__left{
+            margin-bottom: 1rem;
         }
-        
+            &__wrapper{
+                flex-direction: column;
+            }     
+
+            &__right{
+                margin-left: 0;  
+            }  
     }
     
-    div.hobby{
+  .hobby{
         padding-bottom: 20px;
-        .hobby-second-wrapper{
 
-            .hobby-wrapper{
+        &__icons{
+            &-wrapper{
                 width: 100%;
-                div.icon{
-                    width: 60px;
-                    height: 60px;
-
-                    i{
-                        display: block;
-                        font-size: 20px;
-                    }
-                } 
-            
-                div.rect{
-                    width: 20px;
-                    height: 30px;
-                }
-            
-                } 
+            } 
         }
-          
+
+        &__icon{
+            width: 60px;
+            height: 60px;
+
+            i{
+                display: block;
+                font-size: 20px;
+            }
+        } 
+    
+        &__rect{
+            width: 20px;
+            height: 30px;
+        }
        
     }
     
-div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1{
+div.about h1, div.projects h1 ,div.skills h1 ,div.hobby h1 ,div.education h1{
     text-align: center;
 }
 
@@ -494,51 +478,41 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
         }
     }
 
-    div.experience{
-  
-        .experience-main-wrapper{
-        
-            div.experience-wrapper{
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
-
-                div.experience-right{
-                    margin-left: 0;  
-                }
-
+    .skills{
+        &__wrapper{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            &__right{
+                margin-left: 0;  
             }
-        }
-        
-    }
-    
-    div.hobby{
-        padding-bottom: 20px;
-        .hobby-second-wrapper{
-
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 60px;
-                    height: 60px;
-
-                    i{
-                        display: block;
-                        font-size: 25px;
-                    }
-                } 
-            
-                div.rect{
-                    width: 40px;
-                    height: 30px;
-                }
-            
-                } 
-        }
           
-       
+
     }
-    div.contact{
+           
+    
+    .hobby{
+        padding-bottom: 20px;
+
+        &__icon{
+            width: 60px;
+            height: 60px;
+
+            i{
+                display: block;
+                font-size: 25px;
+            }
+        } 
+    
+        &__rect{
+            width: 40px;
+            height: 30px;
+        }  
+   
+    }
+
+    .contact{
    
         .contact-wrapper{
             display: flex;
@@ -550,26 +524,24 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
        
     }
     
-    div.social{
-        // h2{
-        //     text-align: center;
-        // }
-        div.social-main-wrapper {
-          
-            
-            div.social-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: $main-margin;
-            }
+    .social{
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: $main-margin;
+        }
+  
+    }
+    .certificates{
+        &__exam{
+            text-align: center;
         }
     }
 
   
    
      div.right{
-    
         font-size: 1.1rem;
      }
 
@@ -592,10 +564,10 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
         height: 370px;
     }
 
-    div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1{
+    div.about h1, div.projects h1 ,div.skills h1 ,div.hobby h1 ,div.education h1{
         text-align: center;
     }
-    div.social h2, div.contact h2 ,div.certificates h2{
+    div.social h2, div.contact h2 ,div.certificates h2, div.languages h2{
         text-align: center;
     }
 }
@@ -609,14 +581,11 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
     }
 
     
-      div.hobby{
+      .hobby{
         // width: 90%;
         padding-bottom: 20px;
-        .hobby-second-wrapper{
 
-            .hobby-wrapper{
-              
-                div.icon{
+                &__icon{
                     width: 70px;
                     height: 70px;
 
@@ -626,12 +595,9 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
                     }
                 } 
             
-                div.rect{
+                &__rect{
                     height: 35px;
                 }
-            
-                } 
-        }
           
        
     }
@@ -640,142 +606,134 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
 
 @media(min-width: 650px)
 {
-      div.hobby{
-        .hobby-second-wrapper{
+      .hobby{
 
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 80px;
-                    height: 80px;
+        &__icon{
+            width: 80px;
+            height: 80px;
 
-                    i{
-                        display: block;
-                        font-size: 30px;
-                    }
-                } 
-            
-                div.rect{
-                    height: 40px;
-                }
-            
-                } 
-        }   
+            i{
+                display: block;
+                font-size: 30px;
+            }
+        } 
+    
+        &__rect{
+            height: 40px;
+        }
+                         
     }
 }
 
 @media(min-width: 768px)
 {
- 
-    div.hobby{
-        .hobby-second-wrapper{
+    .hobby{
+    
+        &__icon{
+            width: 80px;
+            height: 80px;
 
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 80px;
-                    height: 80px;
-
-                    i{
-                        display: block;
-                        font-size: 30px;
-                    }
-                } 
-            
-                div.rect{
-                    width: 70px;
-                    height: 40px;
-                }
-            
-                } 
+            i{
+                display: block;
+                font-size: 30px;
+            }
+        } 
+    
+        &__rect{
+            width: 70px;
+            height: 40px;
         }   
+                           
     }
 
 }
+
 @media(min-width: 850px){
-    div.hobby{
-        .hobby-second-wrapper{
+    .hobby{
+     
+        &__icon{
+            width: 90px;
+            height: 90px;
 
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 90px;
-                    height: 90px;
-
-                    i{
-                        display: block;
-                        font-size: 30px;
-                    }
-                } 
-            
-                div.rect{
-                    height: 45px;
-                }
-            
-                } 
-        }   
+            i{
+                display: block;
+                font-size: 30px;
+            }
+        } 
+    
+        &__rect{
+            height: 45px;
+        }        
+                  
     }
 }
 
 @media(min-width: 1024px)
 {
-    
-    div.hobby{
-        .hobby-second-wrapper{
+  .hobby{
+    &__icon{
+        width: 100px;
+        height: 100px;
 
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 100px;
-                    height: 100px;
+        i{
+            display: block;
+            font-size: 35px;
+        }
+    } 
 
-                    i{
-                        display: block;
-                        font-size: 35px;
-                    }
-                } 
-            
-                div.rect{
-                    width: 90px;
-                    height: 50px;
-                }
-            
-                } 
-        }   
+    &__rect{
+        width: 90px;
+        height: 50px;
+    }  
+  }
+    div.left{
+        .text{
+            font-size: 1.5rem;
+        }
     }
    
     div.right{
-        p{
-            font-size: 1.1rem;
-        }
-        
+        .description{
+            font-size: 1.5rem;
+        }  
     }
 
-    div.contact{
+    .contact{
    
         .contact-wrapper{
             display: block;
             border-bottom: 2px solid white;
         }
+        &__title{
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+        &__subtitle{
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+        }
        
     }
-    div.social{
-        div.social-main-wrapper {
-            div.social-wrapper {    
-                display: block;            
-                div.mediaWrap{                     
-                    .links{
+    .social{
+        &__wrapper {    
+                display: block;   
+        }         
 
-                        text-align: left;
-                    }
-                }
-            }
+         &__links{
+                text-align: left;
+            }     
+    }
+
+    .certificates{
+        &__exam{
+            text-align: left;
         }
     }
-    div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1{
+    
+    div.about h1, div.projects h1 ,div.skills h1 ,div.hobby h1 ,div.education h1{
         text-align: left;
     }
-    div.social h2, div.contact h2 ,div.certificates h2{
+    div.social h2, div.contact h2 ,div.certificates h2, div.languages h2{
         text-align: left;
     }
     
@@ -822,52 +780,51 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
             }
         }
     
-        div.experience{
-      
-            .experience-main-wrapper{
-            
-                div.experience-wrapper{
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-    
-                    div.experience-right{
-                        margin-left: 0;  
-                    }
-    
-                }
+        .contact{
+            &__title{
+                font-size: 24px;
+                margin-bottom: .2rem;
             }
-            
+            &__subtitle{
+                font-size: 14px;
+                margin-bottom: 1rem;
+            }
         }
-        
-        div.hobby{
+       
+        .skills{
+            
+            &__wrapper{
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                &__right{
+                    margin-left: 0;  
+                }
+
+        }    
+            
+
+        .hobby{
             padding-bottom: 20px;
-            h1{
+            &__title{
                 margin-bottom: 40px;
             }
-            .hobby-second-wrapper{
-    
-                .hobby-wrapper{
+            &__icon{
+                width: 110px;
+                height: 110px;
+
+                i{
+                    display: block;
+                    font-size: 30px;
+                }
+            } 
+        
+            &__rect{
+                width: 70px;
+                height: 55px;
+            }  
                   
-                    div.icon{
-                        width: 110px;
-                        height: 110px;
-    
-                        i{
-                            display: block;
-                            font-size: 30px;
-                        }
-                    } 
-                
-                    div.rect{
-                        width: 70px;
-                        height: 55px;
-                    }
-                
-                    } 
-            }
-              
-           
         }
     
        
@@ -926,43 +883,34 @@ div.about h1, div.projects h1 ,div.experience h1 ,div.hobby h1 ,div.education h1
         }
     }
 
-
-
     div.left div.img{
         height: 410px;
         background-position: top;
     }
 
 
-    div.hobby{
+   .hobby{
         padding-bottom: 20px;
-        h1{
+
+        &__title{
             margin-bottom: 40px;
         }
-        .hobby-second-wrapper{
 
-            .hobby-wrapper{
-              
-                div.icon{
-                    width: 120px;
-                    height: 120px;
+        &__icon{
+            width: 120px;
+            height: 120px;
 
-                    i{
-                        display: block;
-                        font-size: 40px;
-                    }
-                } 
-            
-                div.rect{
-                    width: 90px;
-                    height: 60px;
-                }
-            
-                } 
-        }
-          
-       
-    }
-   
+            i{
+                display: block;
+                font-size: 40px;
+            }
+        } 
     
+        &__rect{
+            width: 90px;
+            height: 60px;
+        }
+    
+        } 
+        
 }
